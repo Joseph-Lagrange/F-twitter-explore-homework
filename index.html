@@ -1,14 +1,34 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
 </head>
 <body>
-  Hello World
-  <script src="src/app.js"></script>
+<header class="header">
+    <h1>Twitter</h1>
+    <nav>
+        <button>登录</button>
+        <button>注册</button>
+    </nav>
+</header>
+<main class="main">
+    <form>
+        <p>查看世界上正在发生的事情</p>
+        <label for="user-account">电话、邮件地址或用户名</label>
+        <input class="user-account" id="user-account" type="text"/>
+        <label for="user-password">密码</label>
+        <input class="user-password" id="user-password" type="password"/>
+        <label for="forget-password">忘记密码？</label>
+        <a id="forget-password">忘记密码?</a>
+        <input class="login" type="submit" value="登录"/>
+        <p>或</p>
+        <input class="register" type="submit" value="注册"/>
+    </form>
+</main>
+<script src="src/app.js"></script>
 </body>
 </html>
