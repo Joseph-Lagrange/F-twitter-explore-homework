@@ -1,0 +1,24 @@
+.menu {
+  button {
+    width: 80px;
+    line-height: 2em;
+    border: 1px solid;
+    border-radius: 2em;
+  }
+
+  button:first-child {
+    @extend .login;
+  }
+
+  button:last-child {
+    @extend .register;
+  }
+}
+
+.login {
+  @include btn-variant(#1977b1, transparent, #1977b1);
+}
+
+.register {
+  @include btn-variant(white, #1992db, transparent);
+}
