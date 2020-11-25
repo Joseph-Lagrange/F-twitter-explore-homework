@@ -1,0 +1,51 @@
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-base;
+  }
+
+  .title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    line-height: 2em;
+    color: $color-base;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .forget-password {
+    display: block;
+    margin: 18px 0;
+    width: 100%;
+    text-align: left;
+    color: $primary-color;
+    font-size: 15px;
+  }
+
+  label {
+    margin: 15px 0;
+    float: left;
+  }
+
+  nav {
+    @extend .menu;
+
+    button {
+      @include btn-width(100%);
+    }
+  }
+}

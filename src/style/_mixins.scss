@@ -8,3 +8,7 @@
   border-color: $border-color;
   background-color: $bg-color;
 }
+
+@mixin btn-width($width) {
+  width: $width;
+}
